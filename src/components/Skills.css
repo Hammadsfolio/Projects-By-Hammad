@@ -1,0 +1,103 @@
+.skills {
+    padding-bottom: 50px;
+}
+
+#skills {
+    background-color: #100f16;
+    min-width: 100vw;
+    padding: 120px clamp(5rem, 11.4vw, 15rem);
+}
+
+.marquee {
+    display: flex;
+    overflow: hidden;
+    height: 11rem;
+    gap: 3.2rem;
+    position: relative;
+    z-index: 3;
+    align-items: center;
+}
+
+.marquee-wrapper {
+    position: relative;
+}
+
+.marquee-content {
+    display: flex;
+    width: 100%;
+    min-width: 76vw;
+    gap: 3.5rem; 
+    /* 3.5 */
+    animation: scroll 15s linear infinite;
+    animation-direction: reverse;
+    /* background-color:#121017 ; */
+    z-index: 3;
+}
+
+
+.marquee-img-text-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 2rem; */
+}
+
+.marquee img:hover {
+    cursor: pointer;
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-105%);
+    }
+}
+
+
+/* Skills Text Marquee  */
+.marquee-text_wrap {
+    display: flex;
+    gap: 1.2rem;
+    overflow: hidden;
+    /* background-color: #c9a876; */
+    color: White;
+    margin-top: 30px;
+    /* transform: rotate(358deg); */
+}
+
+.marquee_text-content {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    min-width: 76vw;
+    animation: text-scroll 15s linear infinite;
+}
+
+.maruee_text-animation-reverse {
+    animation-direction: reverse;
+}
+
+
+.marquee img {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 1s;
+}
+
+@keyframes text-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-105%);
+    }
+}

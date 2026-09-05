@@ -1,0 +1,25 @@
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 28px var(--gutter) 40px;
+}
+
+.footer__inner {
+  max-width: var(--content-max);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-faint);
+  letter-spacing: 0.04em;
+}
+
+.footer__top {
+  color: var(--text-faint);
+  transition: color 0.25s ease;
+}
+
+.footer__top:hover {
+  color: var(--accent);
+}

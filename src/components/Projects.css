@@ -1,0 +1,39 @@
+.projects-wrapper{
+  /* background-color: white; */
+  position: relative;
+  top: 10;
+  /* width: 76vw; */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project_sticky-wrap{
+  position: sticky;
+  top: 100px;
+  width: 100%;
+  margin-top: 5rem;
+  /* height: 100vh; */
+  /* background-color: black; */
+  
+}
+
+.project_image{
+  width: 90%;
+  border-radius: 23px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  transform: skewY(5deg);
+}
+
+.project_image:hover{
+  cursor: pointer;
+  box-shadow: 1px 2px 17px 5px  black;
+}
+
+.project_Name{
+  position: absolute;
+  top: 50%;
+  left: center;
+}

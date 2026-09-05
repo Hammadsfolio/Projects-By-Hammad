@@ -1,0 +1,154 @@
+.nav-main {
+    display: flex;
+    max-width: 85vw;
+    padding: 0.85rem 0px;
+    justify-content: space-around;
+    border: 1px solid white;
+    border-radius: 100px;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    position: relative;
+    z-index: 2;
+    backdrop-filter: blur(18px);
+    background: rgba(255, 255, 255, 0.06);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.12);
+    border-image: none;
+    border-radius: 18rem;
+    animation-name: logoTransform;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: alternate;
+    animation-iteration-count: infinite;
+}
+
+.nav-list ul {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-list ul li {
+    list-style: none;
+}
+
+.nav-list ul li a {
+    color: black;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-family: "Inter", sans-serif;
+    text-decoration: underline;
+    text-underline-offset: 0px;
+    text-decoration-color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav-list ul li a:hover {
+    color: #c9a876;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.nav-btn {
+    display: flex;
+    gap: 10px;
+
+}
+
+
+.Nav-button {
+    /* border: 1px dotted #6ec1e4; */
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 10px 16px;
+    background-color: white;
+    color: black;
+    font-family: "Space Grotesk", sans-serif;
+    box-shadow:
+        inset 10px 10px 10px rgba(0, 0, 0, 0.25),
+        inset -11px -10px 10px rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+
+}
+
+.Nav-button:hover {
+    background-color: transparent;
+    border: 1px dasheds #c9a876;
+    box-shadow: none;
+    color: #c9a876;
+    font-weight: 600;
+}
+
+.nav-label {
+    background: #fff;
+    padding: 0px 8px;
+    border-radius: 999px;
+
+    box-shadow:
+        inset 3px 3px 7px rgba(0, 0, 0, 0.25),
+        inset -3px -3px 7px rgba(255, 255, 255, 0.9);
+
+    /* animation: logoTransform 1s ease-in-out forwards; */
+    animation-name: logoTransform;
+    /* animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: alternate;
+    animation-iteration-count: infinite; */
+
+}
+
+@keyframes logoTransform {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+
+}
+
+.logo {
+    font-family: "Space Grotesk", sans-serif;
+    color: #c9a876;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 16px;
+
+    /* Text shadow needs actual values */
+    /* text-shadow: 2px 2px 0px #000; */
+}
+
+.hero-main_secondary-para {
+    line-height: 30px;
+    letter-spacing: 1.5px;
+}
+
+.hero-main_para {
+    font-style: italic;
+}
+
+.hero-main_left h1 {
+    font-weight: 800;
+    font-size: 60px;
+    white-space: nowrap;
+}
+
+.heading-main{
+    display: flex;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 800;
+    font-size: 60px;
+}
+
+.heading-gap{
+    margin: 15px;
+    background-color: white;
+}
+
